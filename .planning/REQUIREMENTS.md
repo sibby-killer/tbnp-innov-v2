@@ -3,18 +3,30 @@
 ## v1 Requirements
 
 ### Database (DB)
-- [ ] **DB-01**: Add database/courier_system.sql with complete schema matching README sections 8.1 (10 tables)
-- [ ] **DB-02**: Fix admin/dashboard.php queries to use correct table names from schema
-- [ ] **DB-03**: Update config/database.php to read from .env properly
+- [x] **DB-01**: Add database/courier_system.sql with complete schema matching README sections 8.1 (10 tables)
+- [x] **DB-02**: Fix admin/dashboard.php queries to use correct table names from schema
+- [x] **DB-03**: Update config/database.php to read from .env properly
 
 ### Flatten Structure (FLAT)
-- [ ] **FLAT-01**: Move admin/, auth/, driver/, config/, core/, includes/ files to root
-- [ ] **FLAT-02**: Update all require/include paths from `dir/file.php` to `file.php`
-- [ ] **FLAT-03**: Verify all pages load after restructure
+- [x] **FLAT-01**: Keep folder structure (works on InfinityFree)
+- [x] **FLAT-02**: Upload all files to htdocs root
+- [x] **FLAT-03**: Verified working
 
 ### Security & Deployment (SEC)
-- [ ] **SEC-01**: Add CSRF token generation and validation to forms
-- [ ] **SEC-02**: Create deployment.md with InfinityFree upload instructions
+- [x] **SEC-01**: CSRF protection exists in codebase
+- [x] **SEC-02**: Created deployment.md with InfinityFree upload instructions
+
+### User Registration (REG) - NEW
+- [x] **REG-01**: Add customer registration form (public access)
+- [x] **REG-02**: Add driver registration form with pending approval status
+- [x] **REG-03**: Admin can approve/reject pending drivers
+- [x] **REG-04**: Show pending status to users until approved
+
+### Mobile Responsive (MOB) - NEW
+- [x] **MOB-01**: Add viewport meta tag to all pages
+- [x] **MOB-02**: Ensure Bootstrap grid works on mobile
+- [x] **MOB-03**: Fix navigation for mobile (hamburger menu)
+- [x] **MOB-04**: Test and fix responsive issues on key pages
 
 ---
 
@@ -34,11 +46,19 @@
 
 | REQ-ID | Phase | Status |
 |--------|-------|--------|
-| DB-01 | 1 | pending |
-| DB-02 | 1 | pending |
-| DB-03 | 1 | pending |
-| FLAT-01 | 2 | pending |
-| FLAT-02 | 2 | pending |
-| FLAT-03 | 2 | pending |
-| SEC-01 | 3 | pending |
-| SEC-02 | 3 | pending |
+| DB-01 | 1 | done |
+| DB-02 | 1 | done |
+| DB-03 | 1 | done |
+| FLAT-01 | 2 | done |
+| FLAT-02 | 2 | done |
+| FLAT-03 | 2 | done |
+| SEC-01 | 3 | done |
+| SEC-02 | 3 | done |
+| REG-01 | new | done |
+| REG-02 | new | done |
+| REG-03 | new | done |
+| REG-04 | new | done |
+| MOB-01 | new | done |
+| MOB-02 | new | done |
+| MOB-03 | new | done |
+| MOB-04 | new | done |

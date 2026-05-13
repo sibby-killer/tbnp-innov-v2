@@ -1,0 +1,626 @@
+# ============================================
+# COURIER MANAGEMENT SYSTEM - COMPLETE GITIGNORE
+# ============================================
+
+# ============================================
+# ENVIRONMENT FILES
+# ============================================
+# Environment files (never commit these!)
+.env
+.env.*
+!.env.example
+!.env.development.example
+!.env.production.example
+!.env.testing.example
+.env.local
+.env.dev
+.env.development
+.env.staging
+.env.production
+.env.prod
+.env.test
+.env.testing
+
+# ============================================
+# COMPOSER
+# ============================================
+# Composer files
+/composer.phar
+/composer.lock
+/vendor/
+/.composer/
+/composer.lock.md
+/composer.lock.json
+/composer.lock.hash
+
+# ============================================
+# APPLICATION LOGS
+# ============================================
+/logs/*
+!/logs/.gitkeep
+/logs/*.log
+/logs/*.log.*
+/logs/access.log
+/logs/error.log
+/logs/app.log
+/logs/security.log
+/logs/auth.log
+/logs/suspicious.log
+/logs/alerts.log
+/logs/debug.log
+/logs/query.log
+/logs/slow.log
+
+# Application logs
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/logs/*.log
+/storage/logs/*.log.*
+
+# Framework logs
+/laravel.log
+/storage/logs/laravel.log
+/var/log/*
+!/var/log/.gitkeep
+
+# ============================================
+# UPLOADS (Complete Structure)
+# ============================================
+# Main uploads directory
+/uploads/*
+!/uploads/.gitkeep
+
+# Images
+/uploads/images/*
+!/uploads/images/.gitkeep
+/uploads/images/original/*
+!/uploads/images/original/.gitkeep
+/uploads/images/thumbnails/*
+!/uploads/images/thumbnails/.gitkeep
+/uploads/images/resized/*
+!/uploads/images/resized/.gitkeep
+/uploads/images/temp/*
+!/uploads/images/temp/.gitkeep
+/uploads/images/*.jpg
+/uploads/images/*.jpeg
+/uploads/images/*.png
+/uploads/images/*.gif
+/uploads/images/*.webp
+/uploads/images/*.svg
+/uploads/images/*.ico
+
+# Documents
+/uploads/documents/*
+!/uploads/documents/.gitkeep
+/uploads/documents/*.pdf
+/uploads/documents/*.doc
+/uploads/documents/*.docx
+/uploads/documents/*.xls
+/uploads/documents/*.xlsx
+/uploads/documents/*.txt
+/uploads/documents/*.csv
+/uploads/documents/*.zip
+/uploads/documents/*.rar
+/uploads/documents/*.7z
+
+# User uploads
+/uploads/users/*
+!/uploads/users/.gitkeep
+/uploads/users/*/*.jpg
+/uploads/users/*/*.png
+/uploads/users/*/*.pdf
+
+# Driver documents
+/uploads/drivers/*
+!/uploads/drivers/.gitkeep
+/uploads/drivers/*/license/*
+/uploads/drivers/*/insurance/*
+/uploads/drivers/*/photos/*
+
+# Truck documents
+/uploads/trucks/*
+!/uploads/trucks/.gitkeep
+/uploads/trucks/*/insurance/*
+/uploads/trucks/*/registration/*
+/uploads/trucks/*/photos/*
+
+# Client documents
+/uploads/clients/*
+!/uploads/clients/.gitkeep
+/uploads/clients/*/contracts/*
+/uploads/clients/*/invoices/*
+
+# Temporary uploads
+/uploads/temp/*
+!/uploads/temp/.gitkeep
+/uploads/temp/*.*
+
+# ============================================
+# BACKUPS (Complete Structure)
+# ============================================
+/backups/*
+!/backups/.gitkeep
+
+# Database backups
+/backups/database/*
+!/backups/database/.gitkeep
+/backups/database/*.sql
+/backups/database/*.sql.gz
+/backups/database/*.sql.bz2
+/backups/database/*.sql.zip
+/backups/database/*.sql.7z
+/backups/database/*.tar.gz
+/backups/database/daily/*
+/backups/database/weekly/*
+/backups/database/monthly/*
+
+# File backups
+/backups/files/*
+!/backups/files/.gitkeep
+/backups/files/*.tar
+/backups/files/*.tar.gz
+/backups/files/*.zip
+/backups/files/*.rar
+/backups/files/*.7z
+/backups/files/daily/*
+/backups/files/weekly/*
+/backups/files/monthly/*
+
+# Configuration backups
+/backups/config/*
+!/backups/config/.gitkeep
+/backups/config/*.tar.gz
+/backups/config/*.zip
+
+# System backups
+/backups/system/*
+!/backups/system/.gitkeep
+/backups/system/full/*
+/backups/system/incremental/*
+
+# Archived backups
+/backups/archives/*
+!/backups/archives/.gitkeep
+/backups/archives/*.7z
+/backups/archives/*.zip
+/backups/archives/*.tar.gz
+
+# Backup metadata
+/backups/*.json
+/backups/*.xml
+/backups/*.txt
+/backups/*.log
+/backups/*.checksum
+/backups/*.md5
+/backups/*.sha256
+
+# ============================================
+# CACHE
+# ============================================
+/cache/*
+!/cache/.gitkeep
+/cache/*.cache
+/cache/*.tmp
+/cache/data/*
+/cache/views/*
+/cache/routes/*
+/cache/config/*
+/cache/services.json
+/cache/packages.json
+/cache/compiled.php
+/cache/routes-v7.php
+/cache/config.php
+
+# Framework cache
+/bootstrap/cache/*
+!/bootstrap/cache/.gitkeep
+/bootstrap/cache/*.php
+/storage/framework/cache/*
+/storage/framework/views/*.php
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+/temp/*
+!/temp/.gitkeep
+/temp/*.tmp
+/temp/*.temp
+/temp/*.part
+/temp/*.crdownload
+/tmp/*
+!/tmp/.gitkeep
+
+# ============================================
+# AI MODELS & DATA
+# ============================================
+# Model directories
+/ai/models/*
+!/ai/models/.gitkeep
+/ai/training/*
+!/ai/training/.gitkeep
+/ai/predictions/*
+!/ai/predictions/.gitkeep
+/ai/data/*
+!/ai/data/.gitkeep
+/ai/datasets/*
+!/ai/datasets/.gitkeep
+
+# Model files (all formats)
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.mlmodel
+*.cbm
+*.xgb
+*.lgb
+*.pmml
+*.pmml.xml
+*.pmml.pb
+
+# Training data
+*.csv
+*.json
+*.jsonl
+*.parquet
+*.feather
+*.arrow
+*.npy
+*.npz
+*.tfrecord
+*.record
+
+# Checkpoints
+*.ckpt
+*.ckpt.index
+*.ckpt.data-*
+checkpoints/
+!checkpoints/.gitkeep
+
+# TensorFlow
+/ai/models/tensorflow/*
+!/ai/models/tensorflow/.gitkeep
+*.meta
+*.index
+*.data-*
+events.out.tfevents.*
+
+# PyTorch
+/ai/models/pytorch/*
+!/ai/models/pytorch/.gitkeep
+*.pt
+*.pth
+*.pkl
+
+# ============================================
+# DATABASE FILES
+# ============================================
+# SQL files
+*.sql
+*.sql.gz
+*.sql.bz2
+*.sql.zip
+*.sql.7z
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# MySQL
+*.myd
+*.myi
+*.frm
+*.ibd
+*.ib_logfile*
+*.ib_buffer_pool
+*.cnf
+*.my.cnf
+
+# PostgreSQL
+*.pg
+*.pgsql
+*.pgdump
+*.backup
+
+# Database exports
+/database/exports/*
+!/database/exports/.gitkeep
+/database/seeds/*.sql
+/database/dumps/*.sql
+
+# ============================================
+# IDE & EDITORS
+# ============================================
+# PHPStorm
+/.idea/
+/.idea/*.xml
+/.idea/*.iml
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/dataSources.xml
+/.idea/shelf/*
+/.idea/php.xml
+/.idea/deployment.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/.gitignore
+
+# VS Code
+/.vscode/
+/.vscode/*.json
+/.vscode/settings.json
+/.vscode/launch.json
+/.vscode/tasks.json
+/.vscode/extensions.json
+/*.code-workspace
+
+# Sublime Text
+*.sublime-*
+*.sublime-project
+*.sublime-workspace
+
+# NetBeans
+/.netbeans/
+/nbproject/private/
+/build/
+/nbdist/
+/.nb-gradle/
+
+# Eclipse
+/.project
+/.settings/
+/.classpath
+/.buildpath
+/bin/
+/build/
+
+# Atom
+/.atom/
+/*.atom
+
+# Vim
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+
+# Emacs
+*#
+.#*
+\#*\#
+
+# ============================================
+# OS GENERATED FILES
+# ============================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.cab
+*.msi
+*.exe
+*.dll
+*.ocx
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+._*
+*.app
+*.dmg
+*.pkg
+
+# Linux
+*~
+.directory
+.Trash-*
+*.deb
+*.rpm
+*.run
+
+# ============================================
+# PHP SPECIFIC
+# ============================================
+# PHP errors
+error_log
+php_errors.log
+php_error.log
+php-error.log
+php-slow.log
+php-fpm.log
+php.log
+
+# PHPUnit
+.phpunit.result.cache
+.phpunit.cache/
+.phpunit-watcher.yml
+.phpunit-watcher.yml.dist
+.phpunit-watcher.cache
+/.phpunit/
+
+# PHP_CodeSniffer
+.phpcs-cache
+/.phpcs-cache
+/.phpcs.xml
+.phpcs.xml
+.phpcs.xml.dist
+
+# PHPStan
+/.phpstan-cache
+/.phpstan.neon
+/.phpstan.neon.dist
+/.phpstan.result.cache
+
+# Psalm
+/.psalm.xml
+/.psalm.xml.dist
+/psalm.xml
+/psalm.xml.dist
+/psalm-report.json
+
+# Phan
+/.phan/
+/phan_output/
+
+# ============================================
+# TESTING
+# ============================================
+/tests/_output/*
+!/tests/_output/.gitkeep
+/tests/_support/_generated/*
+/tests/_data/*.sql
+/tests/_data/*.db
+/tests/_data/*.log
+/coverage/
+/.phpunit.result.cache
+/phpunit.xml
+/phpunit.xml.dist
+/phpunit-watcher.yml
+/phpunit-watcher.yml.dist
+/test-reports/
+/test-results/
+/junit.xml
+
+# ============================================
+# DOCUMENTATION
+# ============================================
+/docs/_build/
+/docs/build/
+/docs/site/
+/docs/api/
+/docs/generated/
+/*.pdf
+/*.epub
+/*.mobi
+/*.docx
+/*.pptx
+
+# ============================================
+# NODE.JS (if any frontend)
+# ============================================
+/node_modules/
+/npm-debug.log
+/yarn-debug.log
+/yarn-error.log
+/package-lock.json
+/yarn.lock
+/.npm/
+/.yarn/
+/.pnpm-store/
+
+# ============================================
+# SECURITY FILES
+# ============================================
+*.key
+*.pem
+*.crt
+*.csr
+*.pub
+*.priv
+*.asc
+*.gpg
+*.pgp
+*.enc
+*.dec
+*.keystore
+*.jks
+*.truststore
+
+# ============================================
+# ARCHIVE FILES (7-Zip, RAR, ZIP etc)
+# ============================================
+# 7-Zip archives
+*.7z
+*.7z.*
+*.7zip
+
+# WinRAR archives
+*.rar
+*.r[0-9][0-9]
+*.rev
+*.srr
+*.srt
+*.rar.*
+
+# ZIP archives
+*.zip
+*.zipx
+*.z01
+*.z02
+
+# TAR archives
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tgz
+*.tbz2
+*.txz
+
+# Other archives
+*.gz
+*.bz2
+*.xz
+*.lz
+*.lzma
+*.lzo
+*.zst
+*.cab
+*.arj
+*.lzh
+*.lha
+*.ace
+*.iso
+*.dmg
+
+# ============================================
+# BINARY FILES
+# ============================================
+*.bin
+*.dat
+*.data
+*.img
+*.iso
+*.vhd
+*.vhdx
+*.vmdk
+*.ova
+*.ovf
+
+# ============================================
+# LOCK FILES
+# ============================================
+*.lock
+*.lock.*
+.lock
+.lock.*
+
+# ============================================
+# KEEP DIRECTORY STRUCTURE
+# ============================================
+# Keep empty directories with .gitkeep
+!.gitkeep
+!.gitignore
+!.htaccess

@@ -1,0 +1,173 @@
+# ============================================
+# COURIER MANAGEMENT SYSTEM - GITATTRIBUTES
+# ============================================
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# PHP
+*.php text diff=php
+
+# JavaScript
+*.js text
+*.jsx text
+*.mjs text
+
+# CSS
+*.css text
+*.scss text
+*.sass text
+*.less text
+
+# HTML
+*.html text
+*.htm text
+*.xhtml text
+
+# Markdown
+*.md text
+*.markdown text
+
+# JSON
+*.json text
+*.json5 text
+*.jsonld text
+
+# YAML
+*.yml text
+*.yaml text
+
+# XML
+*.xml text
+*.xsl text
+*.xslt text
+
+# Configuration
+*.conf text
+*.cfg text
+*.ini text
+*.env text
+*.dist text
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Docker
+Dockerfile text
+*.dockerfile text
+
+# Git
+.gitattributes text
+.gitignore text
+.gitmodules text
+
+# Binary files - treat as binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.svg binary
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.zip binary
+*.tar.gz binary
+*.tgz binary
+*.rar binary
+*.7z binary
+*.gz binary
+*.bz2 binary
+*.xz binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.db binary
+*.sqlite binary
+*.myd binary
+*.myi binary
+*.frm binary
+*.ibd binary
+*.pkl binary
+*.h5 binary
+*.pt binary
+*.pth binary
+*.onnx binary
+*.pb binary
+*.tflite binary
+*.key binary
+*.pem binary
+*.crt binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.bz2 binary
+*.xz binary
+*.7z binary
+*.rar binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Audio/Video
+*.mp3 binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.wmv binary
+*.flv binary
+*.mkv binary
+
+# Ensure consistent line endings
+*.php text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# Windows specific - CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Linux/Unix specific - LF
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.fish text eol=lf
+
+# Merge strategies for specific files
+composer.json merge=union
+composer.lock merge=union
+package.json merge=union
+package-lock.json merge=union
+
+# Linguist overrides (for GitHub language detection)
+*.blade.php linguist-language=HTML
+*.twig linguist-language=HTML
+*.latte linguist-language=HTML
+*.hbs linguist-language=HTML
+*.mustache linguist-language=HTML
+*.handlebars linguist-language=HTML
